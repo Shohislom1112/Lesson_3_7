@@ -1,0 +1,63 @@
+.all-teachers {
+  padding-inline: 20px;
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #f1f1f1;
+  width: 100%;
+  .like-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .teachers {
+      font-size: 32px;
+    }
+    .search {
+      background: rgb(213, 216, 216);
+      margin-left: 210px;
+      border: none;
+      border-radius: 8px;
+      width: 600px;
+      height: 40px;
+      padding: 8px;
+      outline: none;
+    }
+    .search::placeholder {
+      color: rgb(0, 0, 0);
+    }
+    .filter {
+      background: rgb(213, 216, 216);
+      margin-left: 150px;
+      border: none;
+      border-radius: 8px;
+      width: 150px;
+      height: 40px;
+      padding: 8px;
+      outline: none;
+      display: flex;
+    }
+  }
+}
+
+.table {
+  thead {
+    tr {
+      display: flex;
+      gap: 100px;
+      th {
+        width: 200px;
+        display: flex;
+        justify-content: start;
+      }
+    }
+  }
+  tbody {
+    tr {
+      display: flex;
+      justify-content: space-between;
+      td {
+        width: 200px;
+      }
+    }
+  }
+}

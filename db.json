@@ -1,0 +1,42 @@
+{
+  "teachers": [
+    {
+      "id": "1",
+      "firstname": "Jone ",
+      "lastname": "Doe",
+      "level": "middle"
+    },
+    {
+      "id": "5",
+      "firstname": "Tom  ",
+      "lastname": "Smith",
+      "level": "senior"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "firstname": "Leanne ",
+      "lastname": "Graham",
+      "level": "beginner"
+    },
+    {
+      "id": "2",
+      "firstname": "Ervin ",
+      "lastname": "Howell",
+      "level": "intermediate"
+    },
+    {
+      "id": "4",
+      "firstname": "Patricia ",
+      "lastname": "Lebsack",
+      "level": "advanced"
+    },
+    {
+      "id": "5",
+      "firstname": "Chelsey ",
+      "lastname": "Dietich",
+      "level": "beginner"
+    }
+  ]
+}
