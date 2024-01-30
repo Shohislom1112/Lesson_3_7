@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Teachers.scss";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
+import edit from "../../../public/edit.svg";
+import dalete from "../../../public/delete.svg";
+
 
 const Teachers = ({ user }) => {
   const [teachers, setTeachers] = useState([]);
@@ -103,8 +106,8 @@ const Teachers = ({ user }) => {
               <td>{teacher.lastname}</td>
               <td>{teacher.level}</td>
               <td>
-                <button className="btn">Edit</button>
-                <button className="btn" onClick={() => handleDelete(teacher.id)}>Delete</button>
+                <button className="btn"><img src={edit} alt="" /></button>
+                <button className="btn" onClick={() => handleDelete(teacher.id)}><img src={dalete} alt="" /></button>
               </td>
             </tr>
           ))}

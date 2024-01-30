@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Students.scss";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
-
+import edit from "../../../public/edit.svg";
+import dalete from "../../../public/delete.svg";
 const Students = ({ user }) => {
   const [students, setStudents] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -104,9 +105,9 @@ const Students = ({ user }) => {
                 <td>{student.lastname}</td>
                 <td>{student.level}</td>
                 <td>
-                  <button className="btn" >Edit</button>
+                  <button className="btn" ><img src={edit} alt="" /></button>
                   <button className="btn" onClick={() => handleDelete(student.id)}>
-                    Delete
+                    <img src={dalete} alt="" />
                   </button>
                 </td>
               </tr>
