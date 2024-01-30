@@ -91,8 +91,8 @@ const Students = ({ user }) => {
         <table className="table">
           <thead>
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
+              <th>FirstName</th>
+              <th>LastName</th>
               <th>Level</th>
               <th>Action</th>
             </tr>
