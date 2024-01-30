@@ -8,6 +8,7 @@
     background-color: #ff8686;
     height: 95%;
     .like-header {
+      padding: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -17,20 +18,21 @@
       .search {
         display: flex;
         justify-content: center;
-        background: rgb(213, 216, 216);
+        background: rgb(169, 214, 214);
         margin-left: 180px;
         border: none;
-        border-radius: 8px;
         width: 600px;
         height: 40px;
         padding: 8px;
         outline: none;
-      }
-      .search::placeholder {
-        color: rgb(0, 0, 0);
+        transition: 0.8s;
+        &:hover {
+          color: red;
+          border-radius: 8px;
+        }
       }
       .filter {
-        background: rgb(213, 216, 216);
+        background: rgb(169, 214, 214);
         margin-right: 60px;
         border: none;
         border-radius: 8px;
@@ -38,6 +40,12 @@
         height: 40px;
         padding: 8px;
         outline: none;
+        transition: 0.8s;
+        
+        &:hover {
+          color: red;
+          border-radius: 8px;
+      }
       }
     }
   }

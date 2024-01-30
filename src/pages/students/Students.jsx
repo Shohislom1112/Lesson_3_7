@@ -65,14 +65,14 @@ const Students = ({ user }) => {
   return (
     <div className="wrong">
       <div className="all-students">
-        <div className="like-header">
-          <p className="students">Students</p>
+        <div  className="like-header">
+          
           <input
             className="search"
             type="search"
             name="search"
             id="search"
-            placeholder="Search ..."
+            placeholder="Search!"
             onChange={handleSearch}
           />
           <select

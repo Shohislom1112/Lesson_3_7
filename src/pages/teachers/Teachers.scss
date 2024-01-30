@@ -13,28 +13,36 @@
       font-size: 32px;
     }
     .search {
-      background: rgb(213, 216, 216);
+      background: rgb(169, 214, 214);
       margin-left: 210px;
       border: none;
-      border-radius: 8px;
       width: 600px;
       height: 40px;
       padding: 8px;
       outline: none;
+      transition: 0.8s;
+      &:hover {
+        color: red;
+
+        border-radius: 8px;
+      }
     }
-    .search::placeholder {
-      color: rgb(0, 0, 0);
-    }
+    
     .filter {
-      background: rgb(213, 216, 216);
+      background: rgb(169, 214, 214);
       margin-left: 150px;
       border: none;
-      border-radius: 8px;
+      // border-radius: 8px;
       width: 150px;
       height: 40px;
       padding: 8px;
       outline: none;
       display: flex;
+      transition: 0.8s;
+      &:hover {
+        color: red;
+        border-radius: 8px;
+      }
     }
   }
 }
@@ -78,4 +86,9 @@
     color: red;
 
   }
+}
+.table {
+  background: white;
+  border-radius: 12px;
+  padding: 20px ;
 }

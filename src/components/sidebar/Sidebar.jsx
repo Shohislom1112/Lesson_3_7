@@ -28,10 +28,10 @@ const Sidebar = () => {
             
           </div>
         </li>
-        <li className="teacher">
-          <NavLink to="/teachers" activeClassName="active">
-            <img src={teacher} className="teachers" alt="img" />
-            {SideBar && "Teachers"}
+        <li>
+          <NavLink to="/profile" activeClassName="active">
+            <img src={profile} className="teachers" alt="img" />
+            {SideBar && "Profile"}
           </NavLink>
         </li>
         <li>
@@ -40,10 +40,10 @@ const Sidebar = () => {
             {SideBar && "Students"}
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/profile" activeClassName="active">
-            <img src={profile} className="teachers" alt="img" />
-            {SideBar && "Profile"}
+        <li className="teacher">
+          <NavLink to="/teachers" activeClassName="active">
+            <img src={teacher} className="teachers" alt="img" />
+            {SideBar && "Teachers"}
           </NavLink>
         </li>
         
