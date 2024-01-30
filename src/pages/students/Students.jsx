@@ -30,15 +30,15 @@ const Students = ({ user }) => {
   }, []);
 
   const handleDelete = (id) => {
-    if (confirm("Are you sure you want to delete this product? ❌")) {
+    if (confirm("Rostan ham ochirmoqchimisiz ?")) {
       axios
         .delete(`http://localhost:3000/students/${id}`)
         .then((res) => {
-          console.log("Product deleted successfully ✅", res.data);
+          console.log("Muvaffaqiyatli ochirildi!", res.data);
           fetchStudents();
         })
         .catch((error) => {
-          console.log("The product was not deleted ❌");
+          console.log("Xatolik tufayli o`chmadi");
         });
     }
   };
@@ -104,8 +104,8 @@ const Students = ({ user }) => {
                 <td>{student.lastname}</td>
                 <td>{student.level}</td>
                 <td>
-                  <button>Edit</button>
-                  <button onClick={() => handleDelete(student.id)}>
+                  <button className="btn" >Edit</button>
+                  <button className="btn" onClick={() => handleDelete(student.id)}>
                     Delete
                   </button>
                 </td>

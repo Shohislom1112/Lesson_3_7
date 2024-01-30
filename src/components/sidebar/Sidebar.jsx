@@ -6,9 +6,9 @@ import teacher from "../../../public/teacher.svg"
 import student from "../../../public/students.svg"
 
 const Sidebar = () => {
-  const [showText, setShowText] = useState(false);
+  const [SideBar, setSideBar] = useState(false);
   const toggleTextVisibility = () => {
-    setShowText((prev) => !prev);
+    setSideBar((prev) => !prev);
   };
 
   return (
@@ -25,25 +25,25 @@ const Sidebar = () => {
             >
               <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
             </svg>
-            {/* <p className="admin"> {showText && "Admin"}</p> */}
+            
           </div>
         </li>
         <li className="teacher">
           <NavLink to="/teachers" activeClassName="active">
             <img src={teacher} className="teachers" alt="img" />
-            {showText && "Teachers"}
+            {SideBar && "Teachers"}
           </NavLink>
         </li>
         <li>
-          <NavLink to="/students" activeClassName="active">
+          <NavLink to="/" activeClassName="active">
             <img src={student}className="teachers" alt="img" />
-            {showText && "Students"}
+            {SideBar && "Students"}
           </NavLink>
         </li>
         <li>
           <NavLink to="/profile" activeClassName="active">
             <img src={profile} className="teachers" alt="img" />
-            {showText && "Profile"}
+            {SideBar && "Profile"}
           </NavLink>
         </li>
         

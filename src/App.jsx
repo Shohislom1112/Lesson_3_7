@@ -22,12 +22,12 @@ const App = () => {
         <div className="all-ofthem">
           {user ? <Sidebar user={user} /> : null}{" "}
           <Routes>
-            <Route path="/" element={<Main user={user} />} />
+            
             <Route
               path="/profile"
               element={<Profile user={user} setUser={setUser} />}
             />
-            <Route path="/students" element={<Students user={user} />} />
+            <Route path="/" element={<Students user={user} />} />
             <Route path="/teachers" element={<Teachers user={user} />} />
             <Route
               path="/login"
