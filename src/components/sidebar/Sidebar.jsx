@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate } from "react-router-dom";
 import "./Sidebar.scss";
+import profile from "../../../public/profile.svg"
+import teacher from "../../../public/teacher.svg"
+import student from "../../../public/students.svg"
 
-const handleLogoutt = () => {
-  const confirmLogout = window.confirm("Are you sure you want to logout?");
-  if (confirmLogout) {
-    setUser("");
-    navigate("/login");
-  }
-};
 const Sidebar = () => {
   const [showText, setShowText] = useState(false);
   const toggleTextVisibility = () => {
@@ -34,37 +30,23 @@ const Sidebar = () => {
         </li>
         <li className="teacher">
           <NavLink to="/teachers" activeClassName="active">
-            <img src="tutor.png" alt="img" />
+            <img src={teacher} className="teachers" alt="img" />
             {showText && "Teachers"}
           </NavLink>
         </li>
         <li>
           <NavLink to="/students" activeClassName="active">
-            <img src="student.png" alt="img" />
+            <img src={student}className="teachers" alt="img" />
             {showText && "Students"}
           </NavLink>
         </li>
         <li>
           <NavLink to="/profile" activeClassName="active">
-            <img src="profile.png" alt="img" />
+            <img src={profile} className="teachers" alt="img" />
             {showText && "Profile"}
           </NavLink>
         </li>
-        <NavLink onClick={handleLogoutt} to="/login">
-          <div className="logout">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="#333"
-            >
-              <path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path>
-              <path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
-            </svg>
-            {showText && "Logout"}
-          </div>
-        </NavLink>
+        
       </ul>
     </div>
   );

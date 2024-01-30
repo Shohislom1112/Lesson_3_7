@@ -11,8 +11,12 @@
       position: absolute;
       display: flex;
       gap: 10px;
-      margin-left: 120px;
+      margin-left: 0;
       margin-top: -95px;
+      transition: 15s;
+      &:hover{
+        margin-left: 120px;
+      }
       .admin {
         font-size: 24px;
         margin-top: 8px;
@@ -53,4 +57,8 @@
       color: #333;
     }
   }
+}
+.teachers {
+  width: 24px;
+  height: 24px;
 }

@@ -22,7 +22,7 @@ const Profile = ({ user, setUser }) => {
     <div className="profil">
       <div>
         {user ? (
-          <span>Welcome {user} ! We are glad to see you 😊!</span>
+          <span> {user} </span>
         ) : (
           <NavLink to="/login">Login</NavLink>
         )}{" "}
@@ -31,7 +31,7 @@ const Profile = ({ user, setUser }) => {
         <button className="logout" onClick={handleLogout}>
           Logout
         </button>
-        <NavLink to="/">Continue</NavLink>
+        
       </div>
     </div>
   );
