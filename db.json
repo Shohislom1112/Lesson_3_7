@@ -16,27 +16,27 @@
   "students": [
     {
       "id": "1",
-      "firstname": "Leanne ",
-      "lastname": "Graham",
-      "level": "beginner"
-    },
-    {
-      "id": "2",
-      "firstname": "Ervin ",
-      "lastname": "Howell",
+      "firstname": "Shohislom ",
+      "lastname": "Ravshanov",
       "level": "intermediate"
     },
     {
+      "id": "2",
+      "firstname": "Palonchi ",
+      "lastname": "Pistonchiev",
+      "level": "beginner"
+    },
+    {
       "id": "4",
-      "firstname": "Patricia ",
-      "lastname": "Lebsack",
-      "level": "advanced"
+      "firstname": "Jane ",
+      "lastname": "Doe",
+      "level": "intermediate"
     },
     {
       "id": "5",
-      "firstname": "Chelsey ",
-      "lastname": "Dietich",
-      "level": "beginner"
+      "firstname": "Smith ",
+      "lastname": "Tomthin",
+      "level": "advanced"
     }
   ]
 }

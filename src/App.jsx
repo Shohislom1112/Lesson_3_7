@@ -5,7 +5,6 @@ import "./App.scss";
 import Profile from "./pages/profile/Profile";
 import Teachers from "./pages/teachers/Teachers";
 import Students from "./pages/students/Students";
-import Main from "./pages/home/Main";
 import Login from "./pages/login/Login";
 import NotFound from "./pages/notFound/NotFound";
 
